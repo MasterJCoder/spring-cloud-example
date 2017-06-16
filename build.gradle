@@ -1,0 +1,26 @@
+allprojects {
+    group = "com.lizhihui.test.spring.cloud"
+    version = "1.0.0"
+
+    ext {
+        springBootVersion = '1.5.4.RELEASE'
+        springCloudVersion = '1.3.1.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+//子项目通用配置
+subprojects {
+
+    apply plugin:'java'
+    //jdk版本
+    targetCompatibility = 1.8
+    sourceCompatibility = 1.8
+
+    dependencies{
+
+    }
+}
