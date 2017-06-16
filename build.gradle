@@ -16,6 +16,7 @@ allprojects {
 subprojects {
 
     apply plugin:'java'
+    apply plugin: 'idea'
     //jdk版本
     targetCompatibility = 1.8
     sourceCompatibility = 1.8
